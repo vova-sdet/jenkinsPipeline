@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OpenMRS Runner Class]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test Runner(failed)">
+    <parameter name="password" value="Admin123"/>
+    <parameter name="locationName" value="Pharmacy"/>
+    <parameter name="appName" value="Register a patient"/>
+    <parameter name="driverName" value="chrome"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="Tests.com.OpenMRS.HomePageTest.ApplicationTest">
+        <methods>
+          <include name="validationFunctionalities" invocation-numbers="0"/>
+          <include name="setupPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.com.OpenMRS.HomePageTest.ApplicationTest -->
+      <class name="Tests.com.OpenMRS.LoginTest.AdminLoginTest">
+        <methods>
+          <include name="validateLogin" invocation-numbers="0"/>
+          <include name="setupPage"/>
+          <include name="validateLocationNames" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.com.OpenMRS.LoginTest.AdminLoginTest -->
+    </classes>
+  </test> <!-- Test Runner(failed) -->
+</suite> <!-- Failed suite [OpenMRS Runner Class] -->

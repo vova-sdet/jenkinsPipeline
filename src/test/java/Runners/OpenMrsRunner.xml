@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OpenMRS Runner Class" parallel="tests" thread-count="5">
+
+    <test name="Test Runner">
+        <parameter name="driverName" value="chrome"> </parameter>
+        <parameter name="username" value="admin"></parameter>
+        <parameter name="password" value="Admin123"></parameter>
+        <parameter name="locationName" value="Pharmacy"></parameter>
+        <parameter name="appName" value="Register a patient"></parameter>
+        <classes>
+            <class name="Tests.com.OpenMRS.HomePageTest.ApplicationTest"></class>
+        </classes>
+    </test>
+
+    <test name="Test Runner">
+        <parameter name="driverName" value="chrome1"> </parameter>
+        <parameter name="username" value="admin"></parameter>
+        <parameter name="password" value="Admin123"></parameter>
+        <parameter name="locationName" value="Pharmacy"></parameter>
+        <parameter name="appName" value="Register a patient"></parameter>
+        <classes>
+            <class name="Tests.com.OpenMRS.LoginTest.AdminLoginTest"></class>
+        </classes>
+    </test>
+
+    <test name="Test Runner">
+        <parameter name="driverName" value="firefox"> </parameter>
+        <parameter name="username" value="admin"></parameter>
+        <parameter name="password" value="Admin123"></parameter>
+        <parameter name="locationName" value="Pharmacy"></parameter>
+        <parameter name="appName" value="Register a patient"></parameter>
+        <classes>
+            <class name="Tests.com.OpenMRS.PatientRegister.PatientRegisterTest"></class>
+        </classes>
+    </test>
+
+</suite>
